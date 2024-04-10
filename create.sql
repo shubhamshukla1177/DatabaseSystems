@@ -1,8 +1,3 @@
--- group members:
----- Chaitanya Ganni - G01413209
----- Alfonso Romero - G01223674
----- Kumar Shubham  - G01402581
----- Karthik Vanka - G01371117 
 -- assignment: Project Component 2
 -- course: CS 550 Database Systems
 -- professor: Dr. Wassim Itani
