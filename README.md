@@ -1,8 +1,10 @@
 # DatabaseSystems
 
-## Project Component 1 Description: Design of a database system for a customer loyalty program
+## Project Component 1 Description: 
 
-LoyaltyFirst Inc. is a music store that needs to develop a customer loyalty program supported by an Oracle database backend. The customer loyalty program also known as a "frequent customer" program identifies LoyaltyFirst customers as valued members through a card that accumulates loyalty points whenever they buy items from the LoyaltyFirst store. 
+Design of a database system for a customer loyalty program
+
+*LoyaltyFirst Inc.* is a music store that needs to develop a customer loyalty program supported by an Oracle database backend. The customer loyalty program also known as a "frequent customer" program identifies LoyaltyFirst customers as valued members through a card that accumulates loyalty points whenever they buy items from the LoyaltyFirst store. 
 LoyaltyFirst Inc. is lucky enough to contact you and ask you to develop the database system that supports their loyalty program. A crude description of the business rules and operations is provided below. Note that this information might not be comprehensive or complete and sometimes you need, as a designer, to get back to LoyaltyFirst Inc. (the GTAs and Professor will play the role of LoyaltyFirst Inc.) to get more details to help you deliver a complete database design.
 
 The process starts with the customer buying an affiliation kit that includes the loyalty card. The customer should fill some personal data such as: the Social Security Number, full name, family data, mailing address, and other demographic information such as age (date of birth), sex, martial status, occupation, etc. If the customer loses their card or if it is damaged due to use, they must buy a new one. Another card is issued with a different ID, but it remains linked to the same customer. 
@@ -53,7 +55,10 @@ Note that the user can enter any SQL DML query statement (SELECT, DELETE, INSERT
 
 In this project component you will be relying on the LoyaltyFirst database you created in the previous project components to develop the Java server-side code supporting part of your LoyaltyFirst application. 
 Moreover, you will be developing an extremely simplified mobile application to work with the server-side code. This should consitute a simple but complete end-to-end database application following the 3-tier 
-enterprise model. Once you develop this basic background, you will hopefully realize that any complex application simply relies on the basic constructs you used in this project. Deliver the project component in a zip file. LoyaltyFirstAndroid.zip is the final zip file.
-
+enterprise model. Once you develop this basic background, you will hopefully realize that any complex application simply relies on the basic constructs you used in this project.
+The server-side code is comprised of 1 Java Servlet and 7 Java Server Pages. Create a folder named loyaltyfirst in the webapps folder of your Apache Tomcat Server. This folder should contain all your JSP files and any resources you might need when developing the client application. It also contains the WEB-INF/classes folder containing the .class and .java files of the Login Servlet. You are required to develop the JDBC code to implement the following Java Server-side components. Your JDBC code typcially follows the same exact steps as we did in the lectures. What changes is the query to send to
+the database. Accordingly start by developing the SQL queries needed in each server component and then build the JDBC code and test it from a browser session. A good convention to follow when you have a
+response output from an SQL statement is to separtate the columns by a particular character and the rows by another character to facilitate the process of parsing the response in the Android mobile app later. Use a 
+‘,’ to separate the columns and a ‘#’ to separate the rows. Deliver the project component in a zip file. LoyaltyFirstAndroid.zip is the final zip file.
 
 
